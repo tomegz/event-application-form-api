@@ -13,7 +13,7 @@ db.once('open', () => {
 })
 
 // require models
-require("./models/Event");
+require('./models/Event');
 
 // start the app
 const app = require('./app');
