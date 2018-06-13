@@ -1,0 +1,16 @@
+{
+  "name": "event-application-form-api",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "node start.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tomasz Bubała",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "mongoose": "^5.1.5"
+  }
+}
