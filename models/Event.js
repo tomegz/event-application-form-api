@@ -16,7 +16,7 @@ const eventSchema = new mongoose.Schema({
     type: String,
     trim: true,
     required: 'Please provide email address',
-    validate: [validator.isEmail, "Invalid email address"]
+    validate: [validator.isEmail, 'Invalid email address']
   },
   eventDate: {
     type: Date,
