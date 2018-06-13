@@ -1,7 +1,8 @@
 const express = require('express');
-const eventController = require('../controllers/eventController');
 const router = express.Router();
+const eventController = require('../controllers/eventController');
+const { catchErrors } = require("../handlers/errorHandlers");
 
-router.post('/events/add', eventController.createEvent);
+router.post('/events/add', catchErrors(eventController.createEvent));
 
 module.exports = router;
