@@ -14,6 +14,6 @@ exports.validationErrors = (err, req, res, next) => {
   if (!err.errors) return next(err);
   let errorArray = [];
   const errorKeys = Object.keys(err.errors);
-  errorKeys.forEach(key => errorArray.push(err.errors[key].message));
+  errorKeys.forEach(key => errorArray.push({ text: err.errors[key].message), type: "error" });
   res.status(500).json(errorArray);
 };
