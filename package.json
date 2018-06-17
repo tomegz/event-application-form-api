@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "now": {
+    "dotenv": "variables.env.now"
+  },
   "scripts": {
     "start": "node start.js",
     "test": "echo \"Error: no test specified\" && exit 1"
