@@ -20,7 +20,8 @@ const eventSchema = new mongoose.Schema({
   },
   eventDate: {
     type: Date,
-    required: 'Please provide event\'s date'
+    required: 'Please provide event\'s date',
+    min: [(Date.now() + 1000 * 60 * 60 * 24), 'Provide day at least one day from today!']
   },
   created: {
     type: Date,
